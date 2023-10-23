@@ -16,7 +16,7 @@ export const Reviews = () => {
                 <i className="fa fa-arrow-left" aria-hidden="true"></i>
 
             </div> */}
-            <div className="review1">
+            <div className="review2">
                 <div className="redpart"></div>
                 <img src={require("../images/client-img-1.png")} alt="" className="client"></img>
                 <div className="titlerev">RON AND LIBPNA</div>

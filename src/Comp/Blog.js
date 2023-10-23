@@ -12,7 +12,8 @@ export const Blog = () => {
             </div>           
         </div>
         <div class="c3r2">
-            Lorem Ipsum, you need to be sure there isn't anything embarrassinghidden in the middle of text.
+            {/* Lorem Ipsum, you need to be sure there isn't anything embarrassinghidden in the middle of text. */}
+            "Donila Wedding House makes a wedding perfect" - Couples said this not us! Read reviews:
         </div>
         <div class="gallery">
             <div class="grid">
@@ -20,10 +21,14 @@ export const Blog = () => {
                     <div class="overlay overlaytext">
                         <div class="text">
                             <h4 class="jony_text">
-                                JONY AND JONILI</h4></div>
+                                ETHAN AND AVA</h4></div>
                                 <div class="text"><p class="sometext">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form</p></div>
+                                    {/* There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form */}
+                                    The wedding planner's attention to detail and seamless execution made our dream wedding a reality.
+                                    
+                                    
+                                    </p></div>
                                 
                         
                         {/* <div class="btn_main">
@@ -35,10 +40,12 @@ export const Blog = () => {
                     <div class="overlay overlaytext">
                         <div class="text">
                             <h4 class="jony_text" style={{paddingTop:"0%"}}>
-                                JONY AND JONILI</h4></div>
+                                LIAM AND EMMA</h4></div>
                                 <div class="text"><p class="sometext">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form</p></div>
+                                    {/* There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form */}
+                                    This wedding planner exceeded our expectations and made our special day truly magical.
+                                    </p></div>
                                 
                         
                         {/* <div class="btn_main">
@@ -50,10 +57,12 @@ export const Blog = () => {
                     <div class="overlay overlaytext">
                         <div class="text" style={{width: "100%"}}>
                             <h4 class="jony_text" style={{paddingTop:"0%"}}>
-                                JONY AND JONILI</h4></div>
+                                NOAH AND GRACE</h4></div>
                                 <div class="text"><p class="sometext">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form</p></div>
+                                    {/* There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form */}
+                                    Our wedding planner's expertise and dedication made our day stress-free and absolutely perfect.
+                                    </p></div>
                                 
 {/*                         
                         <div class="btn_main">
@@ -65,10 +74,12 @@ export const Blog = () => {
                     <div class="overlay overlaytext">
                         <div class="text">
                             <h4 class="jony_text">
-                                JONY AND JONILI</h4></div>
+                                JAMES AND LILY</h4></div>
                                 <div class="text"><p class="sometext">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form</p></div>
+                                    {/* There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form */}
+                                    Our wedding planner was an absolute game-changer, turning our dream day into a seamless reality.
+                                    </p></div>
                                 
                         
                         {/* <div class="btn_main">
@@ -93,12 +104,21 @@ export const Blog = () => {
                         OUR <span style={{color: "#fc3e59"}}>STORY</span>
                     </div>
                     <div class="message">
-                        words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
+                        {/* words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
                         sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the 
                         Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internetwords 
                         which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure 
                         there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet 
-                        tend to repeat predefined chunks as necessary, making this the first true generator on the Internet
+                        tend to repeat predefined chunks as necessary, making this the first true generator on the Internet */}
+
+                        Once upon a time, in the pages of our love story, we embarked on a journey to our dream wedding. This narrative of 
+                        love, now etched in our hearts forever, was elevated to a grand spectacle thanks to the incredible wedding 
+                        planner we had the privilege to work with. Their unwavering commitment to detail and their ability to transform 
+                        the ordinary into extraordinary made our wedding an unforgettable chapter in our story.Every element, from the 
+                        elegant decor to the seamless coordination, bore the hallmark of their dedication. Our hearts are brimming with 
+                        gratitude for the magical memories they orchestrated. 
+                        In the love story of our lives, this wedding planner played a pivotal role, ensuring our 'happily 
+                        ever after' began on the most magical note.
                     </div>
                     {/* <div class="seemore">
                         <a href="">SEE MORE</a>
