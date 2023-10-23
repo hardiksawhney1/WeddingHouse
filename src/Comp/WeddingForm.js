@@ -1,35 +1,39 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { ContactUs } from './ContactUs'
 
 export const WeddingForm = () => {
     
-    const [name,changeName] = useState('');
-    const [email,setEmail] = useState('');
-    const [phone,setPhone] = useState('');
-    const [message,setMessage] = useState('');
+
+    // const [email,setEmail] = useState('');
+    // const [phone,setPhone] = useState('');
+    // const [message,setMessage] = useState('');
     const [btnclicked,setBtnClicked] = useState(false);
+    const nameRef = useRef('');
+    const emailRef = useRef('');
+    const phoneRef = useRef('');
+    const messageRef = useRef('');
   return (
     <div>
         <section class="container5">
         <div class="attending">
             <div class="heading2">
-                ARE YOU <span style={{color: "#fc3e59"}}>ATTENDING?</span>
+                CONTACT <span style={{color: "#fc3e59"}}>US</span>
             </div>
-            <input type="text" class="textarea" onChange={e=>changeName(e.target.value)} placeholder="Name" style={{fontSize:"medium"}}>
+            <input type="text" class="textarea" ref={nameRef} placeholder="Name" style={{fontSize:"medium"}}>
                 </input>
-            <input type="text" class="textarea" onChange={e=>setEmail(e.target.value)} placeholder="Email" style={{fontSize:"medium"}}></input>
-            <input type="text" class="textarea" onChange={e=>setPhone(e.target.value)} placeholder="Phone Number" style={{fontSize:"medium"}}></input>
-            <input type="text" class="textarea" onChange={e=>setMessage(e.target.value)} placeholder="Message" style={{fontSize:"medium"}}></input>
+            <input type="text" class="textarea" ref={emailRef} placeholder="Email" style={{fontSize:"medium"}}></input>
+            <input type="text" class="textarea" ref={phoneRef} placeholder="Phone Number" style={{fontSize:"medium"}}></input>
+            <input type="text" class="textarea" ref={messageRef} placeholder="Message" style={{fontSize:"medium"}}></input>
             
             <div onClick={e=>setBtnClicked(!btnclicked)} class="submit">
                 <a className='text-white'>SEND</a>
             </div>
         </div>
         {btnclicked?(<div className='showdetails'>
-            <h3><span style={{color: "#fc3e59"}} >Name:- </span>{name}</h3>
-                    <h3><span style={{color: "#fc3e59"}} >Email:- </span>{email}</h3>
-                    <h3><span style={{color: "#fc3e59"}} >Phone Number:- </span>{phone}</h3>
-                    <h3><span style={{color: "#fc3e59"}} >Message:- </span>{message}</h3>
+            <h3><span style={{color: "#fc3e59"}} >Name:- </span>{nameRef.current.value}</h3>
+                    <h3><span style={{color: "#fc3e59"}} >Email:- </span>{emailRef.current.value}</h3>
+                    <h3><span style={{color: "#fc3e59"}} >Phone Number:- </span>{phoneRef.current.value}</h3>
+                    <h3><span style={{color: "#fc3e59"}} >Message:- </span>{messageRef.current.value}</h3>
         </div>):
         <div class="champagne">
             <div>

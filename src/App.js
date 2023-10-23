@@ -10,9 +10,13 @@ import { ContactUs } from "./Comp/ContactUs";
 import { AboutUs } from "./Comp/AboutUs";
 import { Blog } from "./Comp/Blog";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { useState } from "react";
 import { WeddingForm } from "./Comp/WeddingForm";
 import { Reviews } from "./Comp/Reviews";
+import  Reviews2  from "./Comp/Reviews2";
+import { SignUp } from "./Comp/SignUp";
+import { Login } from "./Comp/Login";
 function App() {
   const [active, setActive] = useState("");
   return (
@@ -54,13 +58,13 @@ function App() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/WeddingForm" className="linking">
+                    <Link to="/Contact" className="linking">
                       <FontAwesomeIcon icon={faRightLong} />
-                      <span className="element">WEDDING FORM</span>
+                      <span className="element">CONTACT US</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Reviews" className="linking">
+                    <Link to="/ReviewsbyCouples" className="linking">
                       <FontAwesomeIcon icon={faRightLong} />
                       <span className="element">REVIEWS</span>
                     </Link>
@@ -102,33 +106,34 @@ function App() {
               <div class="head">WEDDING</div>
               <div class="head2">HOUSE</div>
               <div class="para-page-1">
-                {/* many variations of passages of Lorem Ipsum available, but the
-                majority have suffered alteration in some form, by injected
-                humour, or randomisedmany variations of passages of Lorem Ipsum
-                available, but the majority have suffered alteration in some
-                form, by injected humour, or randomised */}
-
-                Just suppose everything is ready before time, unique decoration
+                {/* Just suppose everything is ready before time, unique decoration
                 for each and every event, dance floor on fire, best food 
                 ever and that too without planning anything ! If you too want 
                 such a hassle-free wedding organized by Winner of XYZ Best 
-                Wedding Planner 2023, just click the button below: 
+                Wedding Planner 2023, just click the button below:  */}
+
+                We specialize in crafting unique and personalized weddings that 
+                reflect your love story. Our team of experienced professionals 
+                is dedicated to orchestrating every detail with precision 
+                and creativity, ensuring your big day is a stress-free and a picture-perfect 
+                event. Explore our services and let us bring your dream wedding to life.
                 
 
               </div>
-              <Link to="/ContactUs" class="contactbt">
-                CONTACT US
+              <Link to="/Signup" class="contactbt">
+                SIGN UP
               </Link>
             </div>
           </div>
         </div>
         <div>
           <Routes>
-            <Route exact path="/ContactUs" element={<ContactUs />} />
+            <Route exact path="/Signup" element={<SignUp />} />
+            <Route exact path="/Login" element={<Login />} />
             <Route exact path="/AboutUs" element={<AboutUs />} />
             <Route exact path="/Blog" element={<Blog />} />
-            <Route exact path="/WeddingForm" element={<WeddingForm />} />
-            <Route exact path="/Reviews" element={<Reviews />} />
+            <Route exact path="/Contact" element={<WeddingForm />} />
+            <Route exact path="/ReviewsbyCouples" element={<Reviews2 />} />
           </Routes>
         </div>
       </div>
