@@ -58,15 +58,15 @@ function App() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Contact" className="linking">
-                      <FontAwesomeIcon icon={faRightLong} />
-                      <span className="element">CONTACT US</span>
-                    </Link>
-                  </li>
-                  <li>
                     <Link to="/ReviewsbyCouples" className="linking">
                       <FontAwesomeIcon icon={faRightLong} />
                       <span className="element">REVIEWS</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/Contact" className="linking">
+                      <FontAwesomeIcon icon={faRightLong} />
+                      <span className="element">CONTACT US</span>
                     </Link>
                   </li>
                 </ul>
