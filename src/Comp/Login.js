@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ContactUs } from './ContactUs';
+import axios from 'axios';
 
 export const Login = () => {
   const navigate = useNavigate('');
+  const [name,setName] = useState('');
+  const [password,setPassword] = useState('');
+  const login = async()=>{
+    const res=await axios.post("http://localhost:8000/users/login", {
+      username:name, password:password
+    }, {withCredentials:true}
+    )
+
+    console.log(res);
+    if(res.data.message=='password dont match'){
+      alert("Username and Password didn't match or user doesn't exist!")
+    }
+    else{
+      window.location.reload();
+      navigate("/");
+    }
+  }
   return (
     
     <div>
@@ -22,9 +40,9 @@ export const Login = () => {
     <p>Please fill your details</p>  
     <div>
     
-  <input type="text" placeholder="Username" />
-  <input type="password" placeholder="Password" />
-  <button className='submit' onClick={()=>{navigate("/")}} value="Log In">Login</button>
+  <input type="text" onChange={e=>setName(e.target.value)} placeholder="Username" />
+  <input type="password" onChange={e=>setPassword(e.target.value)} placeholder="Password" />
+  <button className='submit' onClick={()=>{login()}} value="Log In">Login</button>
   <div class="linksx" style={{textAlign:"center"}}>
     {/* <a href="#">Forgot password</a> */}
     <Link to="/Signup">Don't Have an Account ? Register</Link>

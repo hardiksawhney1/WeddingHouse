@@ -1,7 +1,7 @@
 import React from 'react'
 import { ContactUs } from './ContactUs'
 
-export const Reviews = () => {
+export const Reviews = ({groom_name, bride_name, photo_url, review}) => {
   return (
     <div>
         <section className="container7">
@@ -18,37 +18,33 @@ export const Reviews = () => {
             </div> */}
             <div className="review2">
                 <div className="redpart"></div>
-                <img src={require("../images/client-img-1.png")} alt="" className="client"></img>
-                <div className="titlerev">RON AND LIBPNA</div>
+                {/* require("../images/client-img-1.png") */}
+                <img style={{borderRadius:"50%"}}src={photo_url} alt="" className="client"></img>
+                <div style={{textTransform:"uppercase"}}className="titlerev">{groom_name} AND {bride_name}</div>
                 <div className="prev">
                     {/* have suffered alteration in some form, by injected humour, or randomised words 
                     which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, 
                     you need to be sure there isn't anything embarrassing hidden in */}
-                    The wedding planner went above and beyond to make our special day absolutely 
+                    {/* The wedding planner went above and beyond to make our special day absolutely 
                     perfect, from seamless logistics to stunning decor. Their expertise and dedication made our 
-                    dream wedding a reality.
+                    dream wedding a reality. */}
+                    {review}
                 </div>
                 <img src={require("../images/quick-icon.png")} alt="" className="qotation"></img>
             </div>
-            <div className="review2">
+            {/* <div className="review2">
                 <div className="redpart"></div>
                 <img src={require("../images/client-img-2.png")} alt="" className="client"></img>
                 <div className="titlerev">JONY AND JONILI</div>
                 <div className="prev">
-                    {/* have suffered alteration in some form, by injected humour, or randomised words 
-                    which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, 
-                    you need to be sure there isn't anything embarrassing hidden in */}
-                    {/* Our wedding planner exceeded all the expectations, orchestrating a flawless event filled 
-                    with magic and memories. Their attention to detail and passion for our day made it truly 
-                    unforgettable and we recommend them. */}
+
                     Our wedding planner 
                     went above and beyond to make our special day absolutely 
                     perfect, from seamless logistics to stunning decor. Their expertise and dedication made our 
                     dream wedding a reality.
-                    {/* day, most memorable day. */}
                 </div>
                 <img src={require("../images/quick-icon.png")} alt="" className="qotation"></img>
-            </div>
+            </div> */}
             {/* <div className="rightarrow">
                 <i className="fa fa-arrow-right" aria-hidden="true"></i>
 

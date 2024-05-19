@@ -1,6 +1,18 @@
 *{
   overflow-x: hidden;
 }
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
 @font-face {
   font-family: octinSportsRg;
   src: url(./octinSportsRg.ttf);
@@ -373,7 +385,7 @@
 }
 
 .grid-item1 {
-  background-image: url(images/img-1.png);
+  /* background-image: url(images/img-1.png); */
   background-size: cover;
   background-position:center;
   grid-column: 1/2;
@@ -382,7 +394,7 @@
 }
 
 .grid-item2 {
-  background-image: url(images/img-2.png);
+  /* background-image: url(images/img-2.png); */
   background-size: cover;
   background-position: center;
   grid-column: 2/3;
@@ -391,7 +403,7 @@
 }
 
 .grid-item3 {
-  background-image: url(images/img-3.png);
+  /* background-image: url('https://phlearn.com/wp-content/uploads/2018/04/blurred-bg-before-1200.jpg'); */
   background-size:cover;
   background-position: center;
   grid-column: 2/3;
@@ -400,7 +412,7 @@
 }
 
 .grid-item4 {
-  background-image: url(images/img-4.png);
+  /* background-image: url(images/img-4.png); */
   background-size: cover;
   background-position: center;
   grid-column: 3/4;
@@ -651,8 +663,9 @@ text-decoration: none;
 .review2{
   display: flex;
   flex-direction: column;
+  min-height: 400px;
   height:max-content;
-  width: 45%;  
+  width: 65%;  
   /* padding: 0px 0.7vw; */
   border-radius: 6px;
   /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); */
@@ -692,9 +705,9 @@ text-decoration: none;
   border-top-right-radius: 6px;
 }
 .client{
-  height: 30%;
-  width:30%;
-  margin-left: 35%;
+  height: 100px;
+  width:100px;
+  margin-left: 41%;
   margin-top: -15%;
 }
 .qotation{
@@ -715,6 +728,8 @@ text-decoration: none;
   padding-left: 5%;
   width: 90%;
   color: #b2afaf;
+  word-break: break-all;
+  min-height: 150px;
 }
 
 
